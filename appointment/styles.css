@@ -1,0 +1,82 @@
+Import Fonts
+body {
+  font-family: 'Roboto', sans-serif;
+  background: url('gallery/hero-bg.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #212529;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 4rem;
+  background: rgba(255, 255, 255, 0.9); /* Transparent white background */
+  border-radius: 8px;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Title */
+.form-title {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+/* Form Styles */
+form {
+  display: grid;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.form-group textarea {
+  resize: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+/* Button Styles */
+.btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}

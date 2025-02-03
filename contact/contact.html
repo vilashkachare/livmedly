@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | LivMedly</title>
+
+  <!-- Font Import -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Single form for contact submission -->
+    <h1 class="form-title">Contact Us</h1>
+
+    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+      <!-- Hidden field for access key -->
+      <input type="hidden" name="access_key" value="7dad968d-d42f-4ab7-a9ee-9c37b64ea7eb">
+      <input type="hidden" name="redirect" value="https://hetdabhi.github.io/livmedly-thankyou-page/">
+
+      <!-- Name input field -->
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+
+      <!-- Email input field -->
+      <div class="form-group">
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <!-- Message input field -->
+      <div class="form-group">
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+      </div>
+
+      <!-- Submit button -->
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <!-- Status message after form submission -->
+    <p id="status-message" class="status-message"></p>
+  </div>
+
+  <script src="contact.js"></script>
+</body>
+
+</html>
